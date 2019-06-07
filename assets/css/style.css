@@ -123,8 +123,8 @@
    top: 15vh;
    height: 35vh;
    width: 26vw;
-   border: 2px solid white;
-   color: white;
+   /* border: 2px solid rgb(255, 30, 0); */
+   color: rgb(255, 30, 0);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -159,6 +159,11 @@
   color: rgb(189, 0, 0);
   text-align: center;
  }
+ .stats-two{
+  font-size: 2rem;
+  color: rgb(189, 0, 0);
+  text-align: center;
+ }
 
  #main-button {
    margin-top: 1.5rem;
@@ -182,8 +187,8 @@
   top: 5vh;
   height: 55vh;
   width: 26vw;
-  border: 2px solid yellow;
-  color: white;
+  /* border: 2px solid yellow; */
+  color: rgb(255, 30, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,40 +197,44 @@
   border-radius: 3rem;
  }
  #answer-a {
-  border: 1px solid green;
+  /* border: 1px solid rgb(255, 30, 0); */
   height: 25%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 3rem;
  }
  #answer-b {
-  border: 1px solid green;
+
   height: 25%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 3rem;
  }
  #answer-c {
-  border: 1px solid green;
+
   height: 25%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 3rem;
 }
 #answer-d {
-  border: 1px solid green;
+ 
   height: 25%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 3rem;
 }
 
 .submit {
@@ -234,8 +243,13 @@
 
 .submit-button {
   background: rgb(77, 77, 77);
-  color: rgb(169, 169, 255);
+  color: rgb(255, 30, 0);
   border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.submit-button:hover {
+  outline: 1px solid red;
 }
 .answer-text {
   display: flex;
