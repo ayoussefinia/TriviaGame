@@ -5,58 +5,65 @@ screen.style.height = window.innerHeight;
 screen.style.width = window.innerWidth;
 
 let q1 = {
-  "question" : "question for question 1",
-  "optionA" : "option a for q1",
-  "optionB" : "option b for q1",
-  "optionC" : "option c for q1",
-  "optionD" : "option d for q1",
-  "correct" : "B"
+  "question" : "According to Forbes, what is the highest grossing R rated horror                 film of all time",
+  "optionA" : "The Excorsit",
+  "optionB" : "IT (the Clown)",
+  "optionC" : "The Blair Witch Project",
+  "optionD" : "Scream",
+  "correct" : "B",
+  "correctAnswer": "IT (the Clown)"
   
 }
 
 let q2 = {
-  "question" : "question for question 2",
-  "optionA" : "option a for q2",
-  "optionB" : "option b for q2",
-  "optionC" : "option c for q2",
-  "optionD" : "option d for q2",
-  "correct" : "A"
+  "question" : "In which movie did the horror Antagonist attack characters in their dreams",
+  "optionA" : "A Nightmare on Elm Street",
+  "optionB" : "The Shining",
+  "optionC" : "The Ring",
+  "optionD" : "The Omen",
+  "correct" : "A",
+  "correctAnswer": "A Nightmare on Elm Street"
 }
 
 let q3 = {
-  "question" : "question for question 3",
-  "optionA" : "option a for q3",
-  "optionB" : "option b for q3",
-  "optionC" : "option c for q3",
-  "optionD" : "option d for q3",
-  "correct" : "D"
+  "question" : "In what year did the original Friday the 13th debut",
+  "optionA" : "1987",
+  "optionB" : "1993",
+  "optionC" : "1990",
+  "optionD" : "1980",
+  "correct" : "D",
+  "correctAnswer": "1980"
 }
 
 let q4 = {
-  "question" : "question for question 4",
-  "optionA" : "option a for q4",
-  "optionB" : "option b for q4",
-  "optionC" : "option c for q4",
-  "optionD" : "option d for q4",
-  "correct" : "C"
+  "question" : "In which movie did Jack Nicholson play a character named Jack",
+  "optionA" : "Halloween",
+  "optionB" : "Saw",
+  "optionC" : "The Shining",
+  "optionD" : "Silence of the Lambs",
+  "correct" : "C",
+  "correctAnswer": "The Shining"
 }
 
 let q5 = {
-  "question" : "question for question 5",
-  "optionA" : "option a for q5",
-  "optionB" : "option b for q5",
-  "optionC" : "option c for q5",
-  "optionD" : "option d for q5",
-  "correct" : "A"
+  "question" : "Who was the psycho in the movie Halloween",
+  "optionA" : "Michael Myers",
+  "optionB" : "Jason Vorhees",
+  "optionC" : "Hannibal Lector",
+  "optionD" : "Billy Scott",
+  "correct" : "A",
+  "correctAnswer": "Michael Myers"
 }
 
 let q6 = {
-  "question" : "question for question 6",
-  "optionA" : "option a for q6",
-  "optionB" : "option b for q6",
-  "optionC" : "option c for q6",
-  "optionD" : "option d for q6",
-  "correct" : "B"
+  "question" : "in the 1982 film The Thing, what type of creature was the monster",
+  "optionA" : "childrens doll",
+  "optionB" : "Space Alien",
+  "optionC" : "a man made monster",
+  "optionD" : "a ghost in a human body",
+  "correct" : "B",
+  "correctAnswer": "Space Alien"
+  
 }
 
 let questionArr = [q1, q2, q3, q4, q5, q6];
@@ -132,7 +139,7 @@ function answerChecker() {
     $("#main-button").css("display","none");
     $(".instruction-box").css("display","flex");
     $(".main-instructions").text("Wrong");
-    $(".stats").text("The Correct Answer Was:" + " " + questionArr[i].correct);
+    $(".stats").text("The Correct Answer Was:" + " " + questionArr[i].correctAnswer);
     nextQuestionTimer();
   }
 }
@@ -169,7 +176,7 @@ function timeIsOut() {
   $(".instruction-box").css("display","flex");
   $(".stop-clock").css("display","none");
   $(".main-instructions").text("OUT OF TIME");
-  $(".stats").text("The Correct Answer Was:" + " " + q1.correct);
+  $(".stats").text("The Correct Answer Was:" + " " + q1.correctAnswer);
   $(".question").css("display","none");
   $(".answer").css("display","none");
   $("#main-button").css("display","none");
